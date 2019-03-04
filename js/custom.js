@@ -9,7 +9,15 @@ $(window).load(function () {
         'overflow': 'visible'
     });
 })
-
+$(document).on("contextmenu",".portfolio-padding",function(){
+	return false;
+})
+ $(function () {
+          $(".portfolio-padding").bind("click", function (e) {
+         // 	alert(1)
+              //return false;
+          });
+  });
 $(document).ready(function () {
     "use strict";
 
@@ -104,6 +112,41 @@ $(document).ready(function () {
     });
 
     //animatedModal
+    $(".portfolio_item").click(function(){
+    	$("#animatedModal .container").empty();
+    	var oId = $(this).attr("id");
+    	switch (oId){
+    		case "demo01":
+    			$("#modalDome01").clone().prependTo("#animatedModal .container");
+    			break;
+    		case "demo02":
+    			$("#modalDome02").clone().prependTo("#animatedModal .container");
+    			break;	
+    		case "demo03":
+    			$("#modalDome03").clone().prependTo("#animatedModal .container");
+    			break;
+    		case "demo04":
+    			$("#modalDome04").clone().prependTo("#animatedModal .container");
+    			break;
+    		case "demo05":
+    			$("#modalDome05").clone().prependTo("#animatedModal .container");
+    			break;
+    		case "demo06":
+    			$("#modalDome06").clone().prependTo("#animatedModal .container");
+    			break;
+    		case "demo07":
+    			$("#modalDome07").clone().prependTo("#animatedModal .container");
+    			break;
+    		case "demo08":
+    			$("#modalDome08").clone().prependTo("#animatedModal .container");
+    			break;
+    		case "demo09":
+    			$("#modalDome09").clone().prependTo("#animatedModal .container");
+    			break;	
+    		default:
+    			break;
+    	}
+    })
     $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
 
     // Contact Form 	
