@@ -33,5 +33,17 @@
 				<arguments>1.0-name-matches-false-false-node_modules</arguments>
 			</matcher>
 		</filter>
+<<<<<<< HEAD
+=======
+		<filter>
+			<id>1551754125042</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-node_modules</arguments>
+			</matcher>
+		</filter>
+>>>>>>> release_0305_compass
 	</filteredResources>
 </projectDescription>
