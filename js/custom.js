@@ -149,10 +149,7 @@ $(document).ready(function () {
     $(".portfolio_item").click(function(){
     	$("#animatedModal .container").empty();
     	var oId = $(this).attr("id");
-<<<<<<< HEAD
-=======
     	$("#animatedModal").scrollTop(0)
->>>>>>> release_0305_compass
     	switch (oId){
     		case "demo01":
     			$("#modalDome01").clone().prependTo("#animatedModal .container");
